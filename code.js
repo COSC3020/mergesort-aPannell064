@@ -27,5 +27,5 @@ function merge(x, lo, mid, hi) {
         }
         a++;
     }
-    return array;
+    return x;
 }
