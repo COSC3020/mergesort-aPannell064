@@ -11,6 +11,7 @@ function mergesort(array) {
         }
         
     }
+    return array;
 }
 
 function merge(x, lo, mid, hi)
