@@ -35,11 +35,11 @@ The outer loop in the merge function is simple as it iterates by
 one for each value between the high and low indexes. This length is
 the same as len from the mergesort() function. The inner loop is executed
 if the first value of the completely sorted part (index of a) is larger than
-the first value of the second part (index of b) and when b $\le$ the high index. 
-The job of this loop is to shift elements of the first part so that the value 
-at index b is in the correct place. For the worst case, this loop will occur 
-for half the values between the high and low indexes and the amount of elements 
-that have to be shifted is always going to be the length/2. 
+the first value of the second part (index of b) and b $\le$ the high index or 
+wehen a is greater than b. The job of this loop is to shift elements of the 
+first part so that the value at index b is in the correct place. For the worst 
+case, this loop will occur for half the values between the high and low indexes
+and the amount of elements that have to be shifted is always going to be the length/2. 
 
 ##### Time Complexity
 
@@ -50,7 +50,7 @@ continues until the final part of length n, which requires n/2 shifts. This can 
 demonstrated through a summation of 1*n/2 + 2*n/4 +. . . + n/2*1. Assymptotically, 
 this can represented by a product of two of the same geometric series: 
 
-$\displaystyle\sum_{k=1} ^{\infty} \frac{n}{2} ^i$ 
+$\displaystyle\sum_{k=1} ^{\infty} (\frac{n}{2})^i$ 
 
 Since each of these series converge to n, we are left with an asymptotic complexity of:
 $\Theta(n^2)$
