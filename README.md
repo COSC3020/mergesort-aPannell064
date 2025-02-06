@@ -50,7 +50,7 @@ continues until the final part of length n, which requires n/2 shifts. This can 
 demonstrated through a summation of 1*n/2 + 2*n/4 +. . . + n/2*1. Assymptotically, 
 this can represented as a product of two of the same geometric series: 
 
-$\displaystyle\sum_{k=1} ^{\infty} (\frac{n}{2})^i$ 
+$\displaystyle\sum_{k=1} ^{\infty} (\frac{n}{2^i})$ 
 
 Since each of these series converge to n, we are left with an asymptotic complexity of:
 $\Theta(n^2)$
