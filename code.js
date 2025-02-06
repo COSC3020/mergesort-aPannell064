@@ -17,7 +17,7 @@ function mergesort(array) {
 function merge(x, lo, mid, hi) {
     var tmp, a = lo, b = mid+1;
     for(var k = lo; k <= hi; k++) {
-        if(b <= hi && x[a] > x[b]) {
+        if(a >= b || (b <= hi && x[a] > x[b])) {
             tmp = x[b];
             for(var i = b; i > a; i--) {
                 x[i] = x[i-1];
