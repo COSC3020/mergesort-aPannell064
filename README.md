@@ -48,13 +48,16 @@ have to be made. Of the n times that merge is called, the first n/2 parts
 (all of length 2), require 1 shift. The next n/4 parts require 2 shifts. This
 continues until the final part of length n, which requires n/2 shifts. This can be 
 demonstrated through a summation of 1*n/2 + 2*n/4 +. . . + n/2*1. Assymptotically, 
-this can represented by a product of two of the same geometric series: 
+this can represented as a product of two of the same geometric series: 
 
 $\displaystyle\sum_{k=1} ^{\infty} (\frac{n}{2})^i$ 
 
 Since each of these series converge to n, we are left with an asymptotic complexity of:
 $\Theta(n^2)$
 
+## Extra Help
+
+https://www.overleaf.com/learn used for help with LaTeX syntax, specifically for the series. 
 
 "I certify that I have listed all sources used to complete this exercise, 
 including the use of any Large Language Models. All of the work is my own, 
