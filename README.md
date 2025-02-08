@@ -57,7 +57,8 @@ $\Theta(n^2)$
 
 ## Extra Help
 
-I had to consult https://www.cuemath.com/geometric-series-formula/ to refresh myself on the geometric series
+https://www.overleaf.com/learn used for help with LaTeX syntax, specifically for the series. 
+Additionally, the merge function provided in the lecture was used as a base for my merge function. 
 
 "I certify that I have listed all sources used to complete this exercise, 
 including the use of any Large Language Models. All of the work is my own, 
